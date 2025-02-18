@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+line_navigation/__init__.py
+line_navigation.egg-info/PKG-INFO
+line_navigation.egg-info/SOURCES.txt
+line_navigation.egg-info/dependency_links.txt
+line_navigation.egg-info/requires.txt
+line_navigation.egg-info/top_level.txt
+line_navigation.egg-info/zip-safe
+resource/line_navigation
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
