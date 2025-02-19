@@ -76,7 +76,7 @@ A tunning window and the resulted segmentation, used to see if your tunning para
 In the tunning window we have:
 - **Low and High Yellow H**: Tune this paramater for the yellow detection.
 - **Linear Speed**: As the name suggests, controls the speed of the robot. A value between 4-5 is more than enough.
-- **KP**: This value is a constant that will influentiates how much the angular speed will be affected when the robot will turn. This value is more adequate if you are following the line on top of it, for the case presented, lower values will work.
+- **KP**: This value is a constant that will influentiates how much the angular speed will be affected when the robot will turn. Higher values are more adequate if you are following the line on top of it, for the case presented, lower values will work.
 - **ROI Height**: It will crop the detection window. Used to avoid unwanted detections.
 
 You will launch your robot after will feel satisfied with this tunning. You can keep changing while the robot is moving, of course.
