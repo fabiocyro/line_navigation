@@ -13,9 +13,9 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='roboticslab',
-    maintainer_email='roboticslab@todo.todo',
-    description='TODO: Package description',
+    maintainer='Fabio Ribeiro',
+    maintainer_email='fabio-cyro.ribeiro-batista@u-bourgogne.fr',
+    description='Line Following for Turtlebot3 using ROS Humble',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
