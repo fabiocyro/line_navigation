@@ -16,7 +16,7 @@ setup(
     maintainer='Fabio Ribeiro',
     maintainer_email='fabio-cyro.ribeiro-batista@u-bourgogne.fr',
     description='Line Following for Turtlebot3 using ROS Humble',
-    license='TODO: License declaration',
+    license='GPL-3.0 license',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
