@@ -3,8 +3,8 @@
 <package format="3">
   <name>line_navigation</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="roboticslab@todo.todo">roboticslab</maintainer>
+  <description>Line navigation for Turtlebot3 using ROS 2 Humble</description>
+  <maintainer email="fabio-cyro.ribeiro-batista@u-bourgogne.fr">Fabio Ribeiro</maintainer>
   <license>TODO: License declaration</license>
 
   <depend>rclpy</depend>
