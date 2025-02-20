@@ -15,7 +15,7 @@ This line following code will detect a **yellow** line and follow it by keeping 
 
 ### Method 1:
 
-The most simple. If you already have a workspace up and running, just clone it on your src folder, colcon build it and source the *install/setup.bash* file.
+The most simple way. If you already have a workspace up and running, just clone it on your src folder, colcon build it and source the *install/setup.bash* file.
 
 ```
 cd your_workspace
@@ -24,7 +24,7 @@ colcon build --packages-select line_navigation && source install/setup.bash
 
 ### Method 2:
 
-If you want you can start fresh by creating a fresh package and just copying and pasting the contents, specially the **line_navigation.py** and the **setup.py**
+If you want you can create a fresh package and just cope and paste the contents, specially the **line_navigation.py** and the **setup.py**
 
 ```
 cd your_workspace/src
@@ -66,17 +66,24 @@ Once you launch the code, three windows will pop-up:
 
 ![Screenshot from 2025-02-19 17-56-43](https://github.com/user-attachments/assets/d8ce5113-9b7c-4006-a387-770f8064b698)
 
-This one will keep printing the error, speed and kp parameter, it will also stop the code if you press Ctrl + C with this window chosen.
+This one will keep printing the error, speeds and kp parameter, it will also stop the code if you press ```Ctrl + C``` with this window chosen.
 
-A tunning window and the resulted segmentation, used to see if your tunning parameters are well selected and the quality of the detection.
+A tunning window and the resulted segmentation, used to see if your tunning parameters are well selected and the quality of the detection. <br><hl>
 ![Screenshot from 2025-02-19 17-57-55](https://github.com/user-attachments/assets/964745a9-a17a-4ef1-9499-01933032cf5e)
 ![Screenshot from 2025-02-19 17-57-32](https://github.com/user-attachments/assets/c7fb1d55-fdab-471a-9f1e-e9b3648a1e8b)
 
 
 In the tunning window we have:
-- **Low and High Yellow H**: Tune this paramater for the yellow detection.
+- **Low and High Yellow H**: Tune this parameter for the yellow detection.
 - **Linear Speed**: As the name suggests, controls the speed of the robot. A value between 4-5 is more than enough.
 - **KP**: This value is a constant that will influentiates how much the angular speed will be affected when the robot will turn. Higher values are more adequate if you are following the line on top of it, for the case presented, lower values will work.
 - **ROI Height**: It will crop the detection window. Used to avoid unwanted detections.
 
-You will launch your robot after will feel satisfied with this tunning. You can keep changing while the robot is moving, of course.
+You will launch your robot after feeling satisfied with this tunning. You can keep changing while the robot is moving, of course.
+
+## Notes on tunning, variables and other comments
+- You can adapt for other colors, just change the lines 62 and 63 in the *line_navigation.py* file for detecting what color you want. Just make sure to adapt/rename the other variables depending on this.
+- There is a parameter called LEFT_OFFSET (line 15) that makes the robot follow the line at the right side. The more you reduce this value the more on top of the line the robot will be.
+- The MIN_AREA_TRACK (line 120) is a variable set for avoid detecting thinner lines. You can play with this value if you need to. When you DECREASE this value, it will detect thinner lines.
+- On line 40, there is a timeout variable. If the robot stops detecting the line, it will stop after 5 seconds. This also added some robustness, since it preserves the last valid speed and direction of the robot. As soons as it starts detecting a line again, it will continue the normal behavior.
+- All of these values were made for our setup here in the lab. You will definitely need to play with all of these values to achieve a good setup for your case.
