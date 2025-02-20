@@ -24,7 +24,7 @@ colcon build --packages-select line_navigation && source install/setup.bash
 
 ### Method 2:
 
-If you want you can create a fresh package and just cope and paste the contents, specially the **line_navigation.py** and the **setup.py**
+If you want you can create a fresh package and just copy and paste the contents, specially the **line_navigation.py** and the **setup.py**
 
 ```
 cd your_workspace/src
