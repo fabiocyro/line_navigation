@@ -47,7 +47,7 @@ ros2 run v4l2_camera v4l2_camera_node
 The camera package was installed thanks to this tutorial:
 https://gitlab.com/boldhearts/ros2_v4l2_camera
 
-The code runs with */image_raw/compressed* topic, so as long as you have this type of image, it will work regardless your camera drive
+The code runs with */image_raw/compressed* topic, so as long as you have this type of image, it will work regardless your camera driver.
 
 Then in your workstation launch the line navigation program:
 ```
