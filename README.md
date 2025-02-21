@@ -89,7 +89,7 @@ You will launch your robot after feeling satisfied with this tunning. You can ke
 - All of these values were made for our setup here in the lab. You will definitely need to play with all of these values to achieve a good setup for your case.
 
 ## DEMO
-A small gif showing the robot moving, the video is too big for github.
+A small gif showing the robot moving, the video is too big for github. When the robot is approaching the box by the end of the turn it stops detecting the line for a line, but the timeout variable makes the robot continue!
 
 ![ezgif-5c4234361fa7c3](https://github.com/user-attachments/assets/4af3fc61-7b20-41eb-9a07-5bffb74da0a8)
 
