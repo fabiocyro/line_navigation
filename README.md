@@ -3,7 +3,7 @@ Hello, this is a simple ROS2 package for line following. The setup is made on:
 
 - Ubuntu 22.04 with ROS2 Humble installed
 - Turtlebot3 with ROS2 and a Raspberry Pi camera installed
-- The turtlebot runs with a Raspberri Pi 4 4gb. This is the minimum recommended since weaker versions won't work. 
+- The turtlebot runs with a Raspberry Pi 4 4gb. This is the minimum recommended since weaker versions won't work. 
 - The tracks from the autorace from Turtlebot3 (but "any line" will do the job, I will explain after)
 
 
